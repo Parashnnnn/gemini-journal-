@@ -6,7 +6,7 @@
 
 ### Your AI-powered personal journaling companion
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20App-blue?style=for-the-badge)](https://gemini-journal-one.vercel.app/)
+[![Live Demo](journal.png.png)](https://gemini-journal-one.vercel.app/)
 
 </div>
 
