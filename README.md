@@ -1,8 +1,12 @@
 # Gemini Journal
 
-<div align="center"> <img width="1200" height="475" alt="Gemini Journal" src="journal.png.png" /> </div>****
+<div align="center">
 
-🌐 Live App: https://gemini-journal-one.vercel.app/
+<a href="https://gemini-journal-one.vercel.app/">
+<img width="1200" height="475" alt="Gemini Journal" src="journal.png.png" />
+</a>
+
+</div>
 
 An AI-powered journaling app that helps you write, reflect, and understand your thoughts with the power of Google Gemini.
 
@@ -25,7 +29,7 @@ An AI-powered journaling app that helps you write, reflect, and understand your 
 
 ## License
 
-View Site: https://gemini-journal-one.vercel.app/
+**View Site:** [gemini-journal-one.vercel.app](https://gemini-journal-one.vercel.app/)
 
 This project is licensed under the MIT License.
 
