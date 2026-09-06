@@ -1,0 +1,37 @@
+{
+  "version": "1.0",
+  "entities": {
+    "User": {
+      "path": "users/{userId}",
+      "description": "User profile document isolated to user's UID",
+      "fields": {
+        "uid": { "type": "string", "description": "Firebase Auth UID" },
+        "email": { "type": "string", "description": "User email address" },
+        "displayName": { "type": "string", "description": "User display name" },
+        "createdAt": { "type": "string", "description": "Account registration timestamp" }
+      }
+    },
+    "JournalEntry": {
+      "path": "users/{userId}/entries/{entryId}",
+      "description": "Personal journal entries with multi-turn conversation and AI summary",
+      "fields": {
+        "id": { "type": "string", "description": "Unique entry identifier" },
+        "userId": { "type": "string", "description": "Owner UID" },
+        "title": { "type": "string", "description": "Entry title" },
+        "content": { "type": "string", "description": "Raw reflection or journal content" },
+        "summary": { "type": "string", "description": "AI-generated executive summary" },
+        "messages": {
+          "type": "array",
+          "description": "List of turns exchanged between user and Gemini assistant"
+        },
+        "mood": { "type": "string", "description": "Optional sentiment or mood tag" },
+        "createdAt": { "type": "string", "description": "Creation timestamp in ISO format" },
+        "updatedAt": { "type": "string", "description": "Last updated timestamp in ISO format" }
+      }
+    }
+  },
+  "securityRules": {
+    "users": "request.auth != null && request.auth.uid == userId",
+    "entries": "request.auth != null && request.auth.uid == userId"
+  }
+}
